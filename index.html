@@ -1,83 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>My-portafolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel S. Gonzalez H. | Portafolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Daniel S. Gonzalez H.</h1>
-        <ul class="menu">
-            <li><a href="#inicio">Inicio</a></li>
+
+<body>
+    <!-- ===== ENCABEZADO ===== -->
+    <header>
+        <div class="container header-content">
+            <div class="text">
+                <h1>Daniel S. Gonzalez H.</h1>
+                <p>Desarrollador Web | Front-End | Full Stack | Creativo Digital.</p>
+            </div>
+            <div class="profile-image">
+                <img src="img/perfil.jpg" alt="Foto de perfil de Daniel" />
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== NAVEGACIÓN ===== -->
+    <nav>
+        <ul>
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-</header>
 
-<!-- ===== INICIO ===== -->
-<section id="inicio" class="inicio">
-    <div class="contenido">
-        <h2>Hola, soy <span>Daniel</span></h2>
-        <p>💻 Desarrollador web en formación con pasión por crear proyectos funcionales y atractivos.</p>
-        <a href="#proyectos" class="btn">Ver proyectos</a>
-    </div>
-</section>
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="container">
+        <h2>Sobre mí</h2>
+        <p>
+            Desarrollador web en formación con una mentalidad práctica y un fuerte interés por aprender cada día.
+            Apasionado por crear proyectos funcionales que combinan diseño y lógica,
+            y por participar en experiencias que permitan seguir creciendo y fortaleciendo los conocimientos.
+        </p>
 
-<!-- ===== SOBRE MÍ ===== -->
-<section id="sobre-mi" class="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Desarrollador web en formación con una mentalidad práctica y un fuerte interés por aprender cada día. Apasionado por crear proyectos funcionales que combinan diseño y lógica, y por participar en experiencias que permitan seguir creciendo y fortaleciendo los conocimientos.</p>
-    <ul class="info">
-        <li><strong>Edad:</strong> Daniel Santiago Gonzalez Hernandez</li>
-        <li><strong>Ciudad:</strong> Bucaramanga </li>
-        <li><strong>Email:</strong> daniel235ub@gmail.com</li>
-    </ul>
-</section>
-
-<!-- ===== PROYECTOS ===== -->
-<section id="proyectos" class="proyectos">
-    <h2>Mis proyectos</h2>
-    <div class="grid-proyectos">
-        <!-- Proyecto 1 -->
-        <div class="proyecto">
-            <img src="[imagen-del-proyecto1]" alt="Proyecto 1">
-            <h3>[Título del proyecto 1]</h3>
-            <p>[Descripción breve del proyecto]</p>
-            <a href="[enlace-al-proyecto]" target="_blank" class="btn">Ver más</a>
+        <!-- Espacio para video de YouTube -->
+        <div class="video-container">
+            <!-- 👉 Agrega aquí tu enlace de YouTube -->
+            <iframe src="" title="Presentación de Daniel" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
+    </section>
 
-        <!-- Proyecto 2 -->
-        <div class="proyecto">
-            <img src="[imagen-del-proyecto2]" alt="Proyecto 2">
-            <h3>[Título del proyecto 2]</h3>
-            <p>[Descripción breve del proyecto]</p>
-            <a href="[enlace-al-proyecto]" target="_blank" class="btn">Ver más</a>
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="container">
+        <h2>Proyectos</h2>
+        <div class="proyectos">
+            <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <h3>[Título del proyecto 1]</h3>
+                <p>[Descripción breve del proyecto]</p>
+                <a href="[Enlace del proyecto]" target="_blank">Ver proyecto</a>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="proyecto">
+                <h3>[Título del proyecto 2]</h3>
+                <p>[Descripción breve del proyecto]</p>
+                <a href="[Enlace del proyecto]" target="_blank">Ver proyecto</a>
+            </div>
+
+            <!-- Puedes duplicar más bloques -->
         </div>
+    </section>
 
-        <!-- Puedes duplicar más bloques de proyecto -->
-    </div>
-</section>
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="container">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de los siguientes medios:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:daniel235ub@gmail.com">daniel235ub@gmail.com</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/573177924976" target="_blank"
+                    rel="noopener noreferrer">+57 317 792 4976</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-gonzalez-472628376"
+                    target="_blank" rel="noopener noreferrer">linkedin.com/in/daniel-gonzalez</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/zerosaid" target="_blank"
+                    rel="noopener noreferrer">github.com/zerosaid</a></li>
+        </ul>
+    </section>
 
-<!-- ===== CONTACTO ===== -->
-<section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu correo" required />
-        <textarea placeholder="Tu mensaje" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-    </form>
-</section>
+    <!-- ===== PIE DE PÁGINA ===== -->
+    <footer>
+        <p>© 2025 Daniel Santiago González Hernández · Todos los derechos reservados.</p>
+    </footer>
 
-<footer>
-    <p>© 2025 Daniel Gonzalez — Todos los derechos reservados.</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
