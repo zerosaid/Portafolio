@@ -18,8 +18,8 @@ const textos = {
     proyecto1Titulo: "Gestor Bancario “Acme Bank”",
     proyecto1Desc: "Aplicación web con login, dashboard y transacciones en Firebase.",
     proyecto1Link: "Ver proyecto",
-    proyecto2Titulo: "Mi Agenda Personal",
-    proyecto2Desc: "Aplicación que organiza compromisos diarios con filtros y validación de horarios.",
+    proyecto2Titulo: "Tienda My Pet",
+    proyecto2Desc: "Plataforma web para la gestión integral de mascotas y sus dueños, con registro, búsqueda y control de datos en tiempo real.",
     proyecto2Link: "Ver proyecto",
     proyecto3Titulo: "Web de Fotografía",
     proyecto3Desc: "Sitio web responsivo para una pareja de fotógrafos de bodas, creado en HTML y CSS puro.",
@@ -39,8 +39,8 @@ const textos = {
     proyecto1Titulo: "Banking Manager “Acme Bank”",
     proyecto1Desc: "Web application with login, dashboard, and Firebase real-time transactions.",
     proyecto1Link: "View project",
-    proyecto2Titulo: "My Personal Agenda",
-    proyecto2Desc: "Application that organizes daily tasks with filters and schedule validation.",
+    proyecto2Titulo: "My Pet Store",
+    proyecto2Desc: "Web platform for the comprehensive management of pets and their owners, including registration, search, and real-time data control.",
     proyecto2Link: "View project",
     proyecto3Titulo: "Wedding Photography Website",
     proyecto3Desc: "Responsive website for a wedding photographer couple, built using pure HTML and CSS.",
@@ -67,9 +67,9 @@ function cambiarIdioma(lang) {
   document.getElementById("proyecto1-titulo").textContent = t.proyecto1Titulo;
   document.getElementById("proyecto1-desc").textContent = t.proyecto1Desc;
   document.getElementById("proyecto1-link").textContent = t.proyecto1Link;
-  document.getElementById("proyecto2-titulo").textContent = t.proyecto2Titulo;
-  document.getElementById("proyecto2-desc").textContent = t.proyecto2Desc;
-  document.getElementById("proyecto2-link").textContent = t.proyecto2Link;
+  document.getElementById("proyecto2-titulo").textContent = texts[lang].proyecto2Titulo;
+  document.getElementById("proyecto2-desc").textContent = texts[lang].proyecto2Desc;
+  document.getElementById("proyecto2-link").textContent = texts[lang].proyecto2Link;
   document.getElementById("proyecto3-titulo").textContent = t.proyecto3Titulo;
   document.getElementById("proyecto3-desc").textContent = t.proyecto3Desc;
   document.getElementById("proyecto3-link").textContent = t.proyecto3Link;
