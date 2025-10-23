@@ -13,69 +13,67 @@
     <header>
         <div class="container header-content">
             <div class="text">
-                <h1>Daniel S. Gonzalez H.</h1>
-                <p>Desarrollador Web | Front-End | Full Stack | Creativo Digital.</p>
+                <h1 id="nombre">Daniel S. Gonzalez H.</h1>
+                <p id="rol">Desarrollador Web | Front-End | Full Stack | Creativo Digital.</p>
             </div>
             <div class="profile-image">
                 <img src="img/perfil.jpg" alt="Foto de perfil de Daniel" />
             </div>
+
+            <!-- 🔘 BOTÓN DE IDIOMA -->
+            <button id="language-toggle">English 🇺🇸</button>
         </div>
     </header>
 
     <!-- ===== NAVEGACIÓN ===== -->
     <nav>
         <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-mi" id="nav-sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos" id="nav-proyectos">Proyectos</a></li>
+            <li><a href="#contacto" id="nav-contacto">Contacto</a></li>
         </ul>
     </nav>
 
     <!-- ===== SOBRE MÍ ===== -->
     <section id="sobre-mi" class="container">
-        <h2>Sobre mí</h2>
-        <p>
+        <h2 id="titulo-sobre-mi">Sobre mí</h2>
+        <p id="texto-sobre-mi">
             Desarrollador web en formación con una mentalidad práctica y un fuerte interés por aprender cada día.
             Apasionado por crear proyectos funcionales que combinan diseño y lógica,
             y por participar en experiencias que permitan seguir creciendo y fortaleciendo los conocimientos.
         </p>
-
-        <!-- Espacio para video de YouTube -->
-        <div class="video-container">
-            <!-- 👉 Agrega aquí tu enlace de YouTube -->
-            <iframe src="" title="Presentación de Daniel" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
     </section>
 
     <!-- ===== PROYECTOS ===== -->
     <section id="proyectos" class="container">
-        <h2>Proyectos</h2>
+        <h2 id="titulo-proyectos">Proyectos</h2>
         <div class="proyectos">
-            <!-- Proyecto 1 -->
             <div class="proyecto">
-                <h3>[Título del proyecto 1]</h3>
-                <p>[Descripción breve del proyecto]</p>
-                <a href="[Enlace del proyecto]" target="_blank">Ver proyecto</a>
+                <h3 id="proyecto1-titulo">Gestor Bancario “Acme Bank”</h3>
+                <p id="proyecto1-desc">Aplicación web con login, dashboard y transacciones en Firebase.</p>
+                <a href="#" target="_blank" id="proyecto1-link">Ver proyecto</a>
             </div>
 
-            <!-- Proyecto 2 -->
             <div class="proyecto">
-                <h3>[Título del proyecto 2]</h3>
-                <p>[Descripción breve del proyecto]</p>
-                <a href="[Enlace del proyecto]" target="_blank">Ver proyecto</a>
+                <h3 id="proyecto2-titulo">Mi Agenda Personal</h3>
+                <p id="proyecto2-desc">Aplicación que organiza compromisos diarios con filtros y validación de horarios.
+                </p>
+                <a href="#" target="_blank" id="proyecto2-link">Ver proyecto</a>
             </div>
 
-            <!-- Puedes duplicar más bloques -->
+            <div class="proyecto">
+                <h3 id="proyecto3-titulo">Web de Fotografía</h3>
+                <p id="proyecto3-desc">Sitio web responsivo para una pareja de fotógrafos de bodas, creado en HTML y CSS
+                    puro.</p>
+                <a href="#" target="_blank" id="proyecto3-link">Ver proyecto</a>
+            </div>
         </div>
     </section>
 
     <!-- ===== CONTACTO ===== -->
     <section id="contacto" class="container">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de los siguientes medios:</p>
+        <h2 id="titulo-contacto">Contacto</h2>
+        <p id="texto-contacto">Puedes contactarme a través de los siguientes medios:</p>
         <ul>
             <li><strong>Email:</strong> <a href="mailto:daniel235ub@gmail.com">daniel235ub@gmail.com</a></li>
             <li><strong>WhatsApp:</strong> <a href="https://wa.me/573177924976" target="_blank"
@@ -89,7 +87,7 @@
 
     <!-- ===== PIE DE PÁGINA ===== -->
     <footer>
-        <p>© 2025 Daniel Santiago González Hernández · Todos los derechos reservados.</p>
+        <p id="footer-text">© 2025 Daniel Santiago González Hernández · Todos los derechos reservados.</p>
     </footer>
 
     <script src="./script.js"></script>

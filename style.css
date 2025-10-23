@@ -160,3 +160,19 @@ footer {
     padding: 15px;
     font-size: 0.9em;
 }
+
+#language-toggle {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    margin-left: 20px;
+}
+
+#language-toggle:hover {
+    background-color: #666;
+}
