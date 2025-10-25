@@ -27,6 +27,52 @@ body {
     overflow-x: hidden;
 }
 
+/* Contenedor de los botones */
+.habilidades-botones {
+    display: flex;
+    gap: 20px;
+    /* espacio entre botones */
+    justify-content: center;
+    /* centrar horizontalmente */
+    margin: 20px 0;
+    flex-wrap: wrap;
+    /* que los botones bajen si no caben en pantalla */
+}
+
+/* Estilo general de los botones */
+.habilidades-botones button {
+    background: rgba(255, 255, 255, 0.1);
+    /* efecto glass */
+    color: #FFD700;
+    /* dorado elegante */
+    border: 2px solid #FFD700;
+    /* borde dorado */
+    border-radius: 12px;
+    /* bordes redondeados */
+    padding: 12px 25px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    /* efecto glass */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover */
+.habilidades-botones button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto activo/click */
+.habilidades-botones button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* ===== HEADER ===== */
 header {
     position: relative;
@@ -90,6 +136,7 @@ header p {
     transform: scale(1.05);
     box-shadow: 0 0 15px var(--color-accent-2);
 }
+
 /* ===== MENÚ SUPERIOR ===== */
 .menu {
     backdrop-filter: blur(10px);
