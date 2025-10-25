@@ -4,94 +4,353 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel S. Gonzalez H. | Portafolio</title>
+    <title>Daniel Santiago González Hernández | Portafolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- ===== ENCABEZADO ===== -->
     <header>
-        <div class="container header-content">
-            <div class="text">
-                <h1 id="nombre">Daniel S. Gonzalez H.</h1>
-                <p id="rol">Desarrollador Web | Front-End | Full Stack | Creativo Digital.</p>
-            </div>
-            <div class="profile-image">
-                <img src="./img/Dany.jpg" alt="Foto de perfil de Daniel" />
-            </div>
-
-            <!-- 🔘 BOTÓN DE IDIOMA -->
-            <button id="language-toggle">English 🇺🇸</button>
+        <div class="container">
+            <h1 id="nombre">Daniel Santiago González Hernández</h1>
+            <p id="rol" data-es="Desarrollador Web | Front-End | Back-End | Bases de Datos"
+                data-en="Web Developer | Front-End | Back-End | Databases">Desarrollador Web | Front-End | Back-End |
+                Bases de Datos</p>
         </div>
+        <button id="idioma-btn">English</button>
     </header>
 
-    <!-- ===== NAVEGACIÓN ===== -->
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi" id="nav-sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos" id="nav-proyectos">Proyectos</a></li>
-            <li><a href="#contacto" id="nav-contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <div class="menu">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-    <!-- ===== SOBRE MÍ ===== -->
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#mision">Misión y Valores</a></li>
+                <li><a href="#certificaciones">Certificaciones</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="container">
-        <h2 id="titulo-sobre-mi">Sobre mí</h2>
-        <p id="texto-sobre-mi">
-            Desarrollador web en formación con una mentalidad práctica y un fuerte interés por aprender cada día.
-            Apasionado por crear proyectos funcionales que combinan diseño y lógica,
-            y por participar en experiencias que permitan seguir creciendo y fortaleciendo los conocimientos.
+        <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+        <div class="sobre-mi-foto">
+            <img src="./img/Dany.jpg" alt="Foto de Daniel Santiago González Hernández">
+        </div>
+
+        <p data-es="Soy Daniel Santiago González Hernández, un joven apasionado por la tecnología y el aprendizaje constante. Me caracterizo por ser disciplinado, proactivo y orientado a los resultados. A lo largo de mi formación he desarrollado competencias técnicas y personales que me permiten trabajar en equipo, resolver problemas y adaptarme a nuevos desafíos con facilidad. Mi objetivo profesional es seguir creciendo en el campo del desarrollo de software y aportar soluciones innovadoras que generen impacto positivo."
+            data-en="I am Daniel Santiago González Hernández, a young man passionate about technology and continuous learning. I am characterized by being disciplined, proactive, and results-oriented. Throughout my training, I have developed technical and personal skills that allow me to work in teams, solve problems, and adapt easily to new challenges. My professional goal is to continue growing in software development and contribute innovative solutions that create a positive impact.">
+            Soy Daniel Santiago González Hernández, un joven apasionado por la tecnología y el aprendizaje constante. Me
+            caracterizo por ser disciplinado, proactivo y orientado a los resultados. A lo largo de mi formación he
+            desarrollado competencias técnicas y personales que me permiten trabajar en equipo, resolver problemas y
+            adaptarme a nuevos desafíos con facilidad. Mi objetivo profesional es seguir creciendo en el campo del
+            desarrollo de software y aportar soluciones innovadoras que generen impacto positivo.
         </p>
     </section>
 
-    <!-- ===== PROYECTOS ===== -->
-    <section id="proyectos" class="container">
-        <h2 id="titulo-proyectos">Proyectos</h2>
-        <div class="proyectos">
-            <div class="proyecto">
-                <h3 id="proyecto1-titulo">Gestor Bancario “Acme Bank”</h3>
-                <p id="proyecto1-desc">Aplicación web con login, dashboard y transacciones en Firebase.</p>
-                <a href="https://github.com/zerosaid/ACME-BANK" target="_blank" id="proyecto1-link">Ver proyecto</a>
-            </div>
+    <!-- OBJETIVOS -->
+    <section id="objetivos" class="container">
+        <h2 data-es="Objetivos Profesionales" data-en="Professional Objectives">Objetivos Profesionales</h2>
+        <p data-es="Consolidarme como desarrollador web Full Stack, capaz de integrar diseño, funcionalidad y bases de datos en un solo proyecto. Busco trabajar en entornos colaborativos donde pueda seguir aprendiendo y aportando soluciones tecnológicas innovadoras."
+            data-en="Consolidate myself as a Full Stack web developer, capable of integrating design, functionality, and databases in a single project. I seek to work in collaborative environments where I can continue learning and contributing innovative technological solutions.">
+            Consolidarme como desarrollador web Full Stack, capaz de integrar diseño, funcionalidad y bases de datos en
+            un solo proyecto. Busco trabajar en entornos colaborativos donde pueda seguir aprendiendo y aportando
+            soluciones tecnológicas innovadoras.
+        </p>
+    </section>
 
-            <div class="proyecto">
-                <h3 id="proyecto2-titulo">Tienda My Pet</h3>
-                <p id="proyecto2-desc">
-                    Plataforma web para la gestión integral de mascotas y sus dueños, con registro, búsqueda y control de datos en tiempo real.
+    <!-- MISIÓN Y VALORES -->
+    <section id="mision" class="container">
+        <h2 data-es="Misión, Visión y Valores" data-en="Mission, Vision and Values">Misión, Visión y Valores</h2>
+        <div class="tarjetas-container">
+            <div class="tarjeta">
+                <h4 data-es="Misión" data-en="Mission">Misión</h4>
+                <p data-es="Aplicar mis conocimientos para desarrollar soluciones web útiles, modernas y accesibles que impacten positivamente a las personas."
+                    data-en="Apply my knowledge to develop useful, modern, and accessible web solutions that positively impact people.">
+                    Aplicar mis conocimientos para desarrollar soluciones web útiles, modernas y accesibles que impacten
+                    positivamente a las personas.
                 </p>
-                <a href="https://zerosaid.github.io/Tienda-MyPet/" target="_blank" id="proyecto2-link">Ver proyecto</a>
             </div>
-
-            <div class="proyecto">
-                <h3 id="proyecto3-titulo">Web de Fotografía</h3>
-                <p id="proyecto3-desc">Sitio web responsivo para una pareja de fotógrafos de bodas, creado en HTML y CSS
-                    puro.</p>
-                <a href="https://github.com/zerosaid/Proyecto-HTML-y-CSS-Daniel-Santiago-Gonzalez-Hernandez" target="_blank" id="proyecto3-link">Ver proyecto</a>
+            <div class="tarjeta">
+                <h4 data-es="Visión" data-en="Vision">Visión</h4>
+                <p data-es="Convertirme en un profesional integral en desarrollo web, capaz de crear proyectos de alto nivel técnico y visual."
+                    data-en="Become a comprehensive professional in web development, capable of creating high-level technical and visual projects.">
+                    Convertirme en un profesional integral en desarrollo web, capaz de crear proyectos de alto nivel
+                    técnico y visual.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <h4 data-es="Valores" data-en="Values">Valores</h4>
+                <p data-es="Compromiso, curiosidad, mejora continua, trabajo en equipo y pasión por la tecnología."
+                    data-en="Commitment, curiosity, continuous improvement, teamwork, and passion for technology.">
+                    Compromiso, curiosidad, mejora continua, trabajo en equipo y pasión por la tecnología.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTACTO ===== -->
+    <!-- CERTIFICACIONES -->
+    <section id="certificaciones" class="container">
+        <h2 data-es="Certificaciones" data-en="Certifications">Certificaciones</h2>
+        <div class="tarjetas-container">
+            <div class="tarjeta">
+                <h4 data-es="Técnico en Agroindustria Alimentaria" data-en="Food Agroindustry Technician">Técnico en
+                    Agroindustria Alimentaria</h4>
+                <p data-es="Certificación obtenida en el SENA, con conocimientos en procesamiento y control de calidad de productos alimenticios."
+                    data-en="Certification obtained at SENA, with knowledge in processing and quality control of food products.">
+                    Certificación obtenida en el SENA, con conocimientos en procesamiento y control de calidad de
+                    productos alimenticios.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <h4 data-es="Desarrollo Web Full Stack" data-en="Full Stack Web Development">Desarrollo Web Full Stack
+                </h4>
+                <p data-es="Formación en Campuslands con énfasis en desarrollo Front-End y Back-End, manejo de bases de datos y diseño web moderno."
+                    data-en="Training at Campuslands with emphasis on Front-End and Back-End development, database management, and modern web design.">
+                    Formación en Campuslands con énfasis en desarrollo Front-End y Back-End, manejo de bases de datos y
+                    diseño web moderno.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="container">
+        <h2 data-es="Servicios" data-en="Services">Servicios</h2>
+        <div class="tarjetas-container">
+            <div class="tarjeta">
+                <h4 data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</h4>
+                <p data-es="Diseño y desarrollo de sitios web dinámicos con HTML, CSS y JavaScript, optimizados para todo tipo de dispositivos."
+                    data-en="Design and development of dynamic websites using HTML, CSS, and JavaScript, optimized for all types of devices.">
+                    Diseño y desarrollo de sitios web dinámicos con HTML, CSS y JavaScript, optimizados para todo tipo
+                    de dispositivos.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <h4 data-es="Bases de Datos" data-en="Databases">Bases de Datos</h4>
+                <p data-es="Creación y administración de bases de datos en MySQL, PostgreSQL y Firebase, asegurando integridad, eficiencia y seguridad."
+                    data-en="Creation and administration of databases in MySQL, PostgreSQL, and Firebase, ensuring integrity, efficiency, and security.">
+                    Creación y administración de bases de datos en MySQL, PostgreSQL y Firebase, asegurando integridad,
+                    eficiencia y seguridad.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <h4 data-es="Aplicaciones Interactivas" data-en="Interactive Applications">Aplicaciones Interactivas
+                </h4>
+                <p data-es="Construcción de sistemas educativos o empresariales con funcionalidades dinámicas e interfaces atractivas."
+                    data-en="Development of educational or business systems with dynamic functionalities and attractive interfaces.">
+                    Construcción de sistemas educativos o empresariales con funcionalidades dinámicas e interfaces
+                    atractivas.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <h4 data-es="Programación en Java" data-en="Java Programming">Programación en Java</h4>
+                <p data-es="Desarrollo de aplicaciones y lógica backend utilizando Java, aplicando principios de POO y conexión con bases de datos."
+                    data-en="Development of applications and backend logic using Java, applying OOP principles and database connection.">
+                    Desarrollo de aplicaciones y lógica backend utilizando Java, aplicando principios de POO y conexión
+                    con bases de datos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="container">
+        <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
+        <div class="proyectos">
+            <div class="proyecto">
+                <h3 data-es="Acme Bank" data-en="Acme Bank">Acme Bank</h3>
+                <p data-es="Aplicación web bancaria desarrollada con HTML, CSS y JavaScript, conectada con Firebase Realtime Database. Incluye inicio de sesión, registro, consignaciones y retiros."
+                    data-en="Bank web app developed with HTML, CSS, and JavaScript, connected to Firebase Realtime Database. Includes login, registration, deposits, and withdrawals.">
+                    Aplicación web bancaria desarrollada con HTML, CSS y JavaScript, conectada con Firebase Realtime
+                    Database. Incluye inicio de sesión, registro, consignaciones y retiros.
+                </p>
+                <a href="https://github.com/zerosaid/AcmeBank" target="_blank" data-es="Ver código"
+                    data-en="View code">Ver código</a>
+            </div>
+            <div class="proyecto">
+                <h3 data-es="Mi Agenda Personal" data-en="My Personal Agenda">Mi Agenda Personal</h3>
+                <p data-es="Aplicación web que permite gestionar compromisos diarios con validaciones, filtros por fecha y almacenamiento local."
+                    data-en="Web app that allows managing daily tasks with validations, date filters, and local storage.">
+                    Aplicación web que permite gestionar compromisos diarios con validaciones, filtros por fecha y
+                    almacenamiento local.
+                </p>
+                <a href="https://zerosaid.github.io/MiAgendaPersonal/" target="_blank" data-es="Ver proyecto"
+                    data-en="View project">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3 data-es="Veterinaria Web" data-en="MyPet Store">Veterinaria Web</h3>
+                <p data-es="Aplicación web para la gestión de dueños y mascotas usando Firebase, con registro, búsqueda, actualización y eliminación de datos."
+                    data-en="Web application for managing pet owners and animals using Firebase, with CRUD operations and real-time updates.">
+                    Aplicación web para la gestión de dueños y mascotas usando Firebase, con registro, búsqueda,
+                    actualización y eliminación de datos.
+                </p>
+                <a href="https://zerosaid.github.io/Tienda-MyPet/" target="_blank" data-es="Ver proyecto"
+                    data-en="View project">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <h3 data-es="Gestión de Finca Agrícola" data-en="Farm Management System">Gestión de Finca Agrícola</h3>
+                <p data-es="Base de datos MySQL en tercera forma normal con triggers, funciones, vistas y reportes estadísticos para la producción agrícola."
+                    data-en="MySQL database in 3NF with triggers, functions, views, and statistical reports for agricultural production.">
+                    Base de datos MySQL en tercera forma normal con triggers, funciones, vistas y reportes estadísticos
+                    para la producción agrícola.
+                </p>
+                <a href="https://github.com/zerosaid/MYSQL-II-PROYECTO-FINCA-DE-PRODUCCI-N-AGR-COLA" target="_blank"
+                    data-es="Ver código" data-en="View code">Ver código</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="container">
+        <h2 data-es="Habilidades" data-en="Skills">Habilidades</h2>
+        <div class="habilidades-botones">
+            <button onclick="mostrarContenido('tecnicas')" data-es="Técnicas" data-en="Technical">Técnicas</button>
+            <button onclick="mostrarContenido('blandas')" data-es="Blandas" data-en="Soft">Blandas</button>
+        </div>
+
+        <div class="contenido-habilidad" id="tecnicas">
+            <div class="tarjetas-container">
+                <div class="tarjeta">
+                    <h4 data-es="HTML / CSS" data-en="HTML / CSS">HTML / CSS</h4>
+                    <p data-es="Diseño de interfaces modernas, limpias y responsivas aplicando buenas prácticas de estilo y estructura."
+                        data-en="Design of modern, clean, and responsive interfaces applying best structure and styling practices.">
+                        Diseño de interfaces modernas, limpias y responsivas aplicando buenas prácticas de estilo y
+                        estructura.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h4 data-es="JavaScript" data-en="JavaScript">JavaScript</h4>
+                    <p data-es="Implementación de lógica interactiva, manejo del DOM y desarrollo de funcionalidades dinámicas."
+                        data-en="Implementation of interactive logic, DOM manipulation, and dynamic functionality development.">
+                        Implementación de lógica interactiva, manejo del DOM y desarrollo de funcionalidades dinámicas.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h4 data-es="Java" data-en="Java">Java</h4>
+                    <p data-es="Desarrollo de aplicaciones estructuradas aplicando POO, control de flujo y conexión con bases de datos."
+                        data-en="Development of structured applications applying OOP, flow control, and database connections.">
+                        Desarrollo de aplicaciones estructuradas aplicando POO, control de flujo y conexión con bases de
+                        datos.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h4 data-es="MySQL / PostgreSQL" data-en="MySQL / PostgreSQL">MySQL / PostgreSQL</h4>
+                    <p data-es="Diseño, normalización y administración de bases de datos relacionales con consultas optimizadas y SQL avanzado."
+                        data-en="Design, normalization, and management of relational databases with optimized queries and advanced SQL.">
+                        Diseño, normalización y administración de bases de datos relacionales con consultas optimizadas
+                        y SQL avanzado.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h4 data-es="Firebase" data-en="Firebase">Firebase</h4>
+                    <p data-es="Gestión y sincronización de datos en tiempo real, autenticación y almacenamiento en la nube."
+                        data-en="Real-time data synchronization, authentication, and cloud storage management.">
+                        Gestión y sincronización de datos en tiempo real, autenticación y almacenamiento en la nube.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido-habilidad" id="blandas" style="display:none;">
+            <div class="tarjetas-container">
+                <div class="tarjeta">
+                    <h4 data-es="Trabajo en equipo" data-en="Teamwork">Trabajo en equipo</h4>
+                    <p data-es="Coordinación y colaboración eficiente en proyectos colaborativos."
+                        data-en="Efficient coordination and collaboration in team projects.">
+                        Coordinación y colaboración eficiente en proyectos colaborativos.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h4 data-es="Comunicación" data-en="Communication">Comunicación</h4>
+                    <p data-es="Claridad, empatía y respeto en entornos laborales y de aprendizaje."
+                        data-en="Clarity, empathy, and respect in work and learning environments.">
+                        Claridad, empatía y respeto en entornos laborales y de aprendizaje.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h4 data-es="Creatividad" data-en="Creativity">Creatividad</h4>
+                    <p data-es="Innovación en la resolución de problemas y diseño de interfaces funcionales."
+                        data-en="Innovation in problem solving and functional interface design.">
+                        Innovación en la resolución de problemas y diseño de interfaces funcionales.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h4 data-es="Aprendizaje continuo" data-en="Continuous learning">Aprendizaje continuo</h4>
+                    <p data-es="Curiosidad constante por adquirir nuevos conocimientos y mejorar habilidades."
+                        data-en="Constant curiosity to acquire new knowledge and improve skills.">
+                        Curiosidad constante por adquirir nuevos conocimientos y mejorar habilidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
     <section id="contacto" class="container">
-        <h2 id="titulo-contacto">Contacto</h2>
-        <p id="texto-contacto">Puedes contactarme a través de los siguientes medios:</p>
+        <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
         <ul>
-            <li><strong>Email:</strong> <a href="mailto:daniel235ub@gmail.com">daniel235ub@gmail.com</a></li>
-            <li><strong>WhatsApp:</strong> <a href="https://wa.me/573177924976" target="_blank"
-                    rel="noopener noreferrer">+57 317 792 4976</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-gonzalez-472628376"
-                    target="_blank" rel="noopener noreferrer">linkedin.com/in/daniel-gonzalez</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/zerosaid" target="_blank"
-                    rel="noopener noreferrer">github.com/zerosaid</a></li>
+            <li><strong>Email:</strong> <a href="mailto:danielgonzalezdev@gmail.com">danielgonzalezdev@gmail.com</a>
+            </li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/573177924976" target="_blank" data-es="Enviar mensaje"
+                    data-en="Send message">Enviar mensaje</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/zerosaid" target="_blank">zerosaid</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-santiago-gonzalez"
+                    target="_blank" data-es="Perfil Profesional" data-en="Professional Profile">Perfil Profesional</a>
+            </li>
         </ul>
     </section>
 
-    <!-- ===== PIE DE PÁGINA ===== -->
     <footer>
-        <p id="footer-text">© 2025 Daniel Santiago González Hernández · Todos los derechos reservados.</p>
+        <p>&copy; 2025 Daniel Santiago González Hernández · <a href="https://github.com/zerosaid"
+                target="_blank">GitHub</a></p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script>
+        // Mostrar habilidades
+        function mostrarContenido(tipo) {
+            document.getElementById('tecnicas').style.display = tipo === 'tecnicas' ? 'block' : 'none';
+            document.getElementById('blandas').style.display = tipo === 'blandas' ? 'block' : 'none';
+        }
+
+        // Cambio de idioma
+        const botonIdioma = document.getElementById('idioma-btn');
+        let idioma = 'es';
+
+        botonIdioma.addEventListener('click', () => {
+            idioma = idioma === 'es' ? 'en' : 'es';
+            botonIdioma.textContent = idioma === 'es' ? 'English' : 'Español';
+            document.querySelectorAll('[data-es]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${idioma}`);
+            });
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+
+        // Cierra el menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('open');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
