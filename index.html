@@ -393,61 +393,46 @@
     </section>
 
     <!-- CONTACTO -->
-    <section id="contacto" class="container">
-        <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:danielgonzalezdev@gmail.com">danielgonzalezdev@gmail.com</a>
-            </li>
-            <li><strong>WhatsApp:</strong> <a href="https://wa.me/573177924976" target="_blank" data-es="Enviar mensaje"
-                    data-en="Send message">Enviar mensaje</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/zerosaid" target="_blank">zerosaid</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-santiago-gonzalez"
-                    target="_blank" data-es="Perfil Profesional" data-en="Professional Profile">Perfil Profesional</a>
-            </li>
-        </ul>
-    </section>
+<section id="contacto" class="container">
+    <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+    <ul class="contacto-lista">
+        <li>
+            <a href="mailto:daniel235ub@gmail.com" class="icono-link">
+                <img src="./img/gmail.png" alt="Email" class="icono" data-hover="./img/gmail-hover.png">
+                daniel235ub@gmail.com
+            </a>
+        </li>
+
+        <li>
+            <a href="https://wa.me/573177924976" target="_blank" class="icono-link">
+                <img src="./img/whatsapp.png" alt="WhatsApp" class="icono" data-hover="./img/whatsapp-hover.png">
+                <span data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://github.com/zerosaid" target="_blank" class="icono-link">
+                <img src="./img/github.png" alt="GitHub" class="icono" data-hover="./img/github-hover.png">
+                zerosaid
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.linkedin.com/in/daniel-gonzalez-472628376" target="_blank" class="icono-link">
+                <img src="./img/linkedin.png" alt="LinkedIn" class="icono" data-hover="./img/linkedin-hover.png">
+                <span data-es="Perfil Profesional" data-en="Professional Profile">Perfil Profesional</span>
+            </a>
+        </li>
+    </ul>
+</section>
+
 
     <footer>
         <p>&copy; 2025 Daniel Santiago González Hernández · <a href="https://github.com/zerosaid"
                 target="_blank">GitHub</a></p>
     </footer>
 
-    <script>
-        // Mostrar habilidades
-        function mostrarContenido(tipo) {
-            document.getElementById('tecnicas').style.display = tipo === 'tecnicas' ? 'block' : 'none';
-            document.getElementById('blandas').style.display = tipo === 'blandas' ? 'block' : 'none';
-        }
-
-        // Cambio de idioma
-        const botonIdioma = document.getElementById('idioma-btn');
-        let idioma = 'es';
-
-        botonIdioma.addEventListener('click', () => {
-            idioma = idioma === 'es' ? 'en' : 'es';
-            botonIdioma.textContent = idioma === 'es' ? 'English' : 'Español';
-            document.querySelectorAll('[data-es]').forEach(el => {
-                el.textContent = el.getAttribute(`data-${idioma}`);
-            });
-        });
-
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('open');
-        });
-
-        // Cierra el menú al hacer clic en un enlace
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                hamburger.classList.remove('open');
-            });
-        });
-
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
